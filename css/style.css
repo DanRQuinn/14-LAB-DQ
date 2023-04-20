@@ -51,7 +51,11 @@ ul {
   grid-row-start: 1;
   
 }
+#chart-section{
+  height: 500px;
+  width: 1000px;
 
+}
 section {
   /* This element will be a grid item, but also a flex container */
   background-color: rgba(50, 130, 170, 0.3);
@@ -97,8 +101,11 @@ div #chart{
 }
 /* adjust min hight */
 #mychart{
-min-height: 400px;
+min-height: 600px;
+width: 800px;
+height: 400px;
 }
+
 footer{
 position: fixed;
  left: 0;

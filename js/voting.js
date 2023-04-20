@@ -36,11 +36,13 @@ function renderProductImages() {
 
 function handleImageClick(event) {
   let imageClicked = event.target.title;
+  console.log(state.allProducts.length);
 
   for (let i = 0; i < state.allProducts.length; i++) {
     if (imageClicked === state.allProducts[i].name) {
       state.allProducts[i].timesClicked++;
       votingRounds--;
+      console.log(votingRounds);
       renderProductImages();
     }
 
