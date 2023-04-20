@@ -3,7 +3,7 @@
 
 let votingRounds = 25;
 let productIndexArray = [];
-
+console.log(votingRounds);
 let imgElements = document.querySelectorAll('img');
 let imgContainer = document.querySelector('section');
 
@@ -36,10 +36,12 @@ function renderProductImages() {
 
 function handleImageClick(event) {
   let imageClicked = event.target.title;
-  console.log(state.allProducts.length);
-
+  // console.log(state.allProducts.length);
+console.log("this was clicked",imageClicked);
   for (let i = 0; i < state.allProducts.length; i++) {
+    console.log(state.allProducts[i].name);
     if (imageClicked === state.allProducts[i].name) {
+      console.log("it match");
       state.allProducts[i].timesClicked++;
       votingRounds--;
       console.log(votingRounds);
